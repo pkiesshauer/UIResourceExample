@@ -31,7 +31,7 @@ resourceType = ExtResource("3_3t7a1")
 layout_mode = 2
 resourceType = ExtResource("3_3t7a1")
 
-[node name="ComplexResourceButton" parent="ResourceDisplays/Wood" instance=ExtResource("4_xwo0t")]
+[node name="ComplexResourceButton_Wood" parent="ResourceDisplays/Wood" instance=ExtResource("4_xwo0t")]
 layout_mode = 2
 resourceType = ExtResource("3_3t7a1")
 
@@ -42,11 +42,11 @@ layout_mode = 2
 layout_mode = 2
 resourceType = ExtResource("5_7vu1m")
 
-[node name="SimpleResourceButton_Wood" parent="ResourceDisplays/Stone" instance=ExtResource("2_jyld3")]
+[node name="SimpleResourceButton_Stone" parent="ResourceDisplays/Stone" instance=ExtResource("2_jyld3")]
 layout_mode = 2
 resourceType = ExtResource("5_7vu1m")
 
-[node name="ComplexResourceButton" parent="ResourceDisplays/Stone" instance=ExtResource("4_xwo0t")]
+[node name="ComplexResourceButton_Stone" parent="ResourceDisplays/Stone" instance=ExtResource("4_xwo0t")]
 layout_mode = 2
 resourceType = ExtResource("5_7vu1m")
 
@@ -57,10 +57,10 @@ layout_mode = 2
 layout_mode = 2
 resourceType = ExtResource("6_vw03x")
 
-[node name="SimpleResourceButton_Wood" parent="ResourceDisplays/Apples" instance=ExtResource("2_jyld3")]
+[node name="SimpleResourceButton_Apples" parent="ResourceDisplays/Apples" instance=ExtResource("2_jyld3")]
 layout_mode = 2
 resourceType = ExtResource("6_vw03x")
 
-[node name="ComplexResourceButton" parent="ResourceDisplays/Apples" instance=ExtResource("4_xwo0t")]
+[node name="ComplexResourceButton_Apples" parent="ResourceDisplays/Apples" instance=ExtResource("4_xwo0t")]
 layout_mode = 2
 resourceType = ExtResource("6_vw03x")
