@@ -1,0 +1,57 @@
+[gd_scene load_steps=2 format=3 uid="uid://donvxab5tng0q"]
+
+[ext_resource type="Script" path="res://Script/ComplexResourceButton.gd" id="1_ceueo"]
+
+[node name="ComplexResourceButton" type="MarginContainer"]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_ceueo")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxAdd" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Button_1" type="Button" parent="VBoxContainer/HBoxAdd"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+text = "+1"
+
+[node name="Button_5" type="Button" parent="VBoxContainer/HBoxAdd"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+text = "+5"
+
+[node name="Button10" type="Button" parent="VBoxContainer/HBoxAdd"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+text = "+10"
+
+[node name="HBoxSub" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Button_s1" type="Button" parent="VBoxContainer/HBoxSub"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+text = "-1"
+
+[node name="Button_s5" type="Button" parent="VBoxContainer/HBoxSub"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+text = "-5"
+
+[node name="Button_s10" type="Button" parent="VBoxContainer/HBoxSub"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+text = "-10"
+
+[connection signal="pressed" from="VBoxContainer/HBoxAdd/Button_1" to="." method="_on_button_1_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxAdd/Button_5" to="." method="_on_button_5_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxAdd/Button10" to="." method="_on_button_10_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxSub/Button_s1" to="." method="_on_button_s_1_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxSub/Button_s5" to="." method="_on_button_s_5_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxSub/Button_s10" to="." method="_on_button_s_10_pressed"]

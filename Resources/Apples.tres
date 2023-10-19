@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="ResourceType" load_steps=2 format=3 uid="uid://cd7mnpmv344by"]
+
+[ext_resource type="Script" path="res://Script/ResourceType.gd" id="1_rced2"]
+
+[resource]
+script = ExtResource("1_rced2")
+ID = 2
+Name = "Apples"
+IsFood = true

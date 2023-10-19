@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bifpetq7en2j1"]
+
+[ext_resource type="Script" path="res://Script/SimpleResourceButton.gd" id="1_cokr1"]
+
+[node name="SimpleResourceButton" type="Button"]
+custom_minimum_size = Vector2(100, 50)
+offset_right = 8.0
+offset_bottom = 8.0
+script = ExtResource("1_cokr1")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

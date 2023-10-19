@@ -1,0 +1,66 @@
+[gd_scene load_steps=7 format=3 uid="uid://b7u0tsao331am"]
+
+[ext_resource type="PackedScene" uid="uid://cbn3bxx762kq2" path="res://Scenes/resource_display.tscn" id="1_7p6fm"]
+[ext_resource type="PackedScene" uid="uid://bifpetq7en2j1" path="res://Scenes/simple_resource_button.tscn" id="2_jyld3"]
+[ext_resource type="Resource" uid="uid://lecrk363neav" path="res://Resources/Wood.tres" id="3_3t7a1"]
+[ext_resource type="PackedScene" uid="uid://donvxab5tng0q" path="res://Scenes/complex_resource_button.tscn" id="4_xwo0t"]
+[ext_resource type="Resource" uid="uid://07tk4epjcav1" path="res://Resources/Stone.tres" id="5_7vu1m"]
+[ext_resource type="Resource" uid="uid://cd7mnpmv344by" path="res://Resources/Apples.tres" id="6_vw03x"]
+
+[node name="Example Scene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ResourceDisplays" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Wood" type="VBoxContainer" parent="ResourceDisplays"]
+layout_mode = 2
+
+[node name="ResourceDisplay_Wood" parent="ResourceDisplays/Wood" instance=ExtResource("1_7p6fm")]
+layout_mode = 2
+resourceType = ExtResource("3_3t7a1")
+
+[node name="SimpleResourceButton_Wood" parent="ResourceDisplays/Wood" instance=ExtResource("2_jyld3")]
+layout_mode = 2
+resourceType = ExtResource("3_3t7a1")
+
+[node name="ComplexResourceButton" parent="ResourceDisplays/Wood" instance=ExtResource("4_xwo0t")]
+layout_mode = 2
+resourceType = ExtResource("3_3t7a1")
+
+[node name="Stone" type="VBoxContainer" parent="ResourceDisplays"]
+layout_mode = 2
+
+[node name="ResourceDisplay_Stone" parent="ResourceDisplays/Stone" instance=ExtResource("1_7p6fm")]
+layout_mode = 2
+resourceType = ExtResource("5_7vu1m")
+
+[node name="SimpleResourceButton_Wood" parent="ResourceDisplays/Stone" instance=ExtResource("2_jyld3")]
+layout_mode = 2
+resourceType = ExtResource("5_7vu1m")
+
+[node name="ComplexResourceButton" parent="ResourceDisplays/Stone" instance=ExtResource("4_xwo0t")]
+layout_mode = 2
+resourceType = ExtResource("5_7vu1m")
+
+[node name="Apples" type="VBoxContainer" parent="ResourceDisplays"]
+layout_mode = 2
+
+[node name="ResourceDisplay_Apples" parent="ResourceDisplays/Apples" instance=ExtResource("1_7p6fm")]
+layout_mode = 2
+resourceType = ExtResource("6_vw03x")
+
+[node name="SimpleResourceButton_Wood" parent="ResourceDisplays/Apples" instance=ExtResource("2_jyld3")]
+layout_mode = 2
+resourceType = ExtResource("6_vw03x")
+
+[node name="ComplexResourceButton" parent="ResourceDisplays/Apples" instance=ExtResource("4_xwo0t")]
+layout_mode = 2
+resourceType = ExtResource("6_vw03x")
